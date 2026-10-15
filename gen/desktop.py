@@ -8,7 +8,7 @@ BAND = 14
 R_OUT = 26
 R_IN = 12
 X0, Y0, X1, Y1 = BAND, BAND, W - BAND, H - BAND
-TOTAL = 11.8
+TOTAL = 10.5
 FPS = 30
 SHAPE_FPS = 12
 FILLET = 16
@@ -24,7 +24,7 @@ ISLAND = {"x": W / 2, "w": 132, "h": 32, "rest": 44, "gap": 16}
 LAUNCHER = {"x": W / 2, "w": 340, "d": 100, "rest": 70, "apps": 7, "hover": 4}
 BLOB = {"r": 34, "points": 24}
 WORD_SCALE = 2.25
-WORD = {"advance": 0.56, "sweep": 2.6, "swell": 1.2}
+WORD = {"advance": 0.56, "sweep": 1.3, "swell": 1.2}
 
 
 def frame(o, t, n):
