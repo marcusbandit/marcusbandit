@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 84" width="520" height="84">
+  <style>
+    .name { font: 700 34px system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Noto Sans', 'Helvetica Neue', Arial, sans-serif; fill: #eef2f5; }
+    .line { font: 400 18px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace; fill: #a5aeb8; }
+    .caret { fill: #7fb3d4; animation: blink 1s steps(1, end) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    
+    #clip0 rect { animation: w0 17.160s infinite; }
+    @keyframes w0 {
+      0%, 3.497% { width: 0px; animation-timing-function: steps(42, end); }
+      19.406%, 32.226% { width: 453.6px; animation-timing-function: steps(42, end); }
+      38.345%, 100% { width: 0px; }
+    }
+    #caret0 { animation: c0 17.160s infinite; }
+    @keyframes c0 {
+      0%, 0.000% { opacity: 1; transform: translateX(0px); }
+      0.006%, 3.497% { opacity: 1; transform: translateX(0px); animation-timing-function: steps(42, end); }
+      19.406%, 32.226% { opacity: 1; transform: translateX(453.6px); animation-timing-function: steps(42, end); }
+      38.345% { opacity: 1; transform: translateX(0px); }
+      38.351%, 100% { opacity: 0; transform: translateX(0px); }
+    }
+    #clip1 rect { animation: w1 17.160s infinite; }
+    @keyframes w1 {
+      0%, 41.259% { width: 0px; animation-timing-function: steps(37, end); }
+      55.274%, 68.094% { width: 399.6px; animation-timing-function: steps(37, end); }
+      73.485%, 100% { width: 0px; }
+    }
+    #caret1 { animation: c1 17.160s infinite; }
+    @keyframes c1 {
+      0%, 38.345% { opacity: 0; transform: translateX(0px); }
+      38.351%, 41.259% { opacity: 1; transform: translateX(0px); animation-timing-function: steps(37, end); }
+      55.274%, 68.094% { opacity: 1; transform: translateX(399.6px); animation-timing-function: steps(37, end); }
+      73.485% { opacity: 1; transform: translateX(0px); }
+      73.491%, 100% { opacity: 0; transform: translateX(0px); }
+    }
+    #clip2 rect { animation: w2 17.160s infinite; }
+    @keyframes w2 {
+      0%, 76.399% { width: 0px; animation-timing-function: steps(15, end); }
+      82.080%, 94.901% { width: 162.0px; animation-timing-function: steps(15, end); }
+      97.086%, 100% { width: 0px; }
+    }
+    #caret2 { animation: c2 17.160s infinite; }
+    @keyframes c2 {
+      0%, 73.485% { opacity: 0; transform: translateX(0px); }
+      73.491%, 76.399% { opacity: 1; transform: translateX(0px); animation-timing-function: steps(15, end); }
+      82.080%, 94.901% { opacity: 1; transform: translateX(162.0px); animation-timing-function: steps(15, end); }
+      97.086% { opacity: 1; transform: translateX(0px); }
+      97.092%, 100% { opacity: 1; transform: translateX(0px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      #clip0 rect { width: 100%; }
+      g[id^="caret"] { opacity: 0; }
+    }
+  </style>
+  <text class="name" x="0" y="34">Marcus Rosado</text>
+  <clipPath id="clip0"><rect x="0" y="50" width="0" height="28"/></clipPath>
+  <text class="line" x="0" y="70" clip-path="url(#clip0)">building my own desktop, from the shell up</text>
+  <g id="caret0"><rect class="caret" x="1" y="55" width="2" height="19"/></g>
+  <clipPath id="clip1"><rect x="0" y="50" width="0" height="28"/></clipPath>
+  <text class="line" x="0" y="70" clip-path="url(#clip1)">Hyprland, Quickshell and a lot of QML</text>
+  <g id="caret1"><rect class="caret" x="1" y="55" width="2" height="19"/></g>
+  <clipPath id="clip2"><rect x="0" y="50" width="0" height="28"/></clipPath>
+  <text class="line" x="0" y="70" clip-path="url(#clip2)">studying at DTU</text>
+  <g id="caret2"><rect class="caret" x="1" y="55" width="2" height="19"/></g>
+</svg>

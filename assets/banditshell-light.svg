@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" width="800" height="260">
+  <defs>
+    <filter id="goo" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="blur"/>
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 24 -11"/>
+    </filter>
+    <clipPath id="frame"><rect width="800" height="260" rx="26"/></clipPath>
+  </defs>
+  <style>
+    .title { font: 700 34px system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Noto Sans', 'Helvetica Neue', Arial, sans-serif; fill: #0f1114; }
+    .tag { font: 400 18px system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Noto Sans', 'Helvetica Neue', Arial, sans-serif; fill: #3a4149; }
+    .stack { font: 400 14px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace; fill: #5b8fb0; }
+
+    #panel {
+      transform-box: fill-box; transform-origin: 50% 0%;
+      animation: panel 10.0s infinite;
+    }
+    @keyframes panel {
+      0%, 13.000% { transform: scale(0.1915, 0.0833); animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      23.000%, 77.000% { transform: scale(1, 1); animation-timing-function: cubic-bezier(0.7, 0, 0.84, 0); }
+      81.000%, 100% { transform: scale(0.1915, 0.0833); }
+    }
+
+    #content { animation: content 10.0s infinite; }
+    @keyframes content {
+      0%, 20.000% { opacity: 0; transform: translateY(-8px); animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      27.000%, 74.000% { opacity: 1; transform: translateY(0); animation-timing-function: ease-in; }
+      77.500%, 100% { opacity: 0; transform: translateY(-8px); }
+    }
+
+    #cursor { animation: cursor 10.0s infinite; }
+    @keyframes cursor {
+      0% { transform: translate(624.0px, 223.6px); opacity: 0; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      3% { transform: translate(624.0px, 223.6px); opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      13.000% { transform: translate(400.0px, 8.4px); animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      27.000%, 72.000% { transform: translate(418.0px, 186px); opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      87.000% { transform: translate(208.0px, 234.0px); opacity: 1; }
+      96.000%, 100% { transform: translate(208.0px, 234.0px); opacity: 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      #panel { transform: none; }
+      #content { opacity: 1; }
+      #cursor { opacity: 0; }
+    }
+  </style>
+
+  <rect width="800" height="260" rx="26" fill="#eef2f5"/>
+  <g clip-path="url(#frame)">
+    <g filter="url(#goo)" fill="#d0d7dd">
+      <path d="M26,0 H774 A26,26 0 0 1 800,26 V234 A26,26 0 0 1 774,260 H26 A26,26 0 0 1 0,234 V26 A26,26 0 0 1 26,0 Z M26,14 A12,12 0 0 0 14,26 V234 A12,12 0 0 0 26,246 H774 A12,12 0 0 0 786,234 V26 A12,12 0 0 0 774,14 Z" fill-rule="evenodd"/>
+      <rect id="panel" x="165.0" y="0" width="470" height="168" rx="22"/>
+    </g>
+  </g>
+
+  <g id="content" text-anchor="middle">
+    <text class="title" x="400.0" y="68">banditshell</text>
+    <text class="tag" x="400.0" y="106">Empty at rest, summoned on intent.</text>
+    <text class="stack" x="400.0" y="140">quickshell / qml / hyprland</text>
+  </g>
+
+  <g id="cursor">
+    <path d="M0,0 V19 L4.6,14.6 L8,22.4 L11.4,21 L8,13.4 H14.4 Z" fill="#0f1114" stroke="#eef2f5" stroke-width="1.4" stroke-linejoin="round"/>
+  </g>
+</svg>
