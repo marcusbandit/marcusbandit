@@ -7,7 +7,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from tokens import THEMES
 
 OUT = Path(__file__).parent.parent / "assets"
-CARDS = ["title", "desktop"]
+CARDS = ["title", "anibeam", "desktop"]
 
 if __name__ == "__main__":
     OUT.mkdir(exist_ok=True)
