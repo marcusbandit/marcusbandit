@@ -11,14 +11,3 @@
     </picture>
   </a>
 </div>
-
-<br>
-
-<div align="center">
-  <a href="https://github.com/marcusbandit/banditshell">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/marcusbandit/marcusbandit/main/assets/desktop-dark.svg">
-      <img src="https://raw.githubusercontent.com/marcusbandit/marcusbandit/main/assets/desktop-light.svg" width="520" alt="banditshell">
-    </picture>
-  </a>
-</div>
